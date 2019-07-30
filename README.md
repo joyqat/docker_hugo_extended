@@ -19,3 +19,4 @@ docker rm -f $(docker ps -a | grep hugo | awk '{print $1}')
 
 Then you can get a public folder to deploy to your web server.
 
+You can also uncomment `pygments` line in `Dockerfile` to install `pygments` in case you need it.
