@@ -1,0 +1,19 @@
+FROM alpine
+
+# Configuration variables
+ENV HUGO_VERSION 0.56.1
+ENV HUGO_BINARY hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+
+# Fix runtime
+RUN apk add libstdc++ \
+    && mkdir /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
+
+# Download and install hugo
+WORKDIR /root
+RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY} \
+    && tar xf ${HUGO_BINARY} \
+    && mv hugo /usr/local/bin \
+    && rm -f *
+
+# Optionally install pygments
+# RUN apk add py-pygments
