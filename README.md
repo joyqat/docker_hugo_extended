@@ -5,7 +5,7 @@
 # Usage
 
 ```shell
-docker run hugo -v path/to/hugoproject:/site joyqat/hugo
+docker run hugo -v path/to/hugoproject:/site joyqat/hugo:0.56.1
 docker rm -f $(docker ps -a | grep joyqat/hugo | awk '{print $1}')
 ```
 
