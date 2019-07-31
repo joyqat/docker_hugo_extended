@@ -1,5 +1,7 @@
 # docker_hugo_extended
 
+[![](https://images.microbadger.com/badges/image/joyqat/hugo.svg)](https://microbadger.com/images/joyqat/hugo "Get your own image badge on microbadger.com")  [![](https://images.microbadger.com/badges/version/joyqat/hugo.svg)](https://microbadger.com/images/joyqat/hugo "Get your own version badge on microbadger.com")
+
 [Hugo-extended](https://github.com/gohugoio/hugo) in docker using alpine
 
 # Usage
