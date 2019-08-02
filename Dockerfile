@@ -17,5 +17,7 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${H
     && mv hugo /usr/local/bin \
     && rm -f *
 
+EXPOSE 1313
+
 # Optionally install pygments
 # RUN apk add py-pygments
