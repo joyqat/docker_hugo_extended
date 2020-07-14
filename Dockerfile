@@ -1,7 +1,7 @@
 FROM alpine
 
 # Configuration variables
-ENV HUGO_VERSION 0.62.1
+ENV HUGO_VERSION 0.74.1
 ENV HUGO_BINARY hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
 
 # Fix runtime
